@@ -1,6 +1,7 @@
 🌸 To-Do List Web App
 
 This is a simple To-Do List web application built using **HTML, CSS, and JavaScript**. It helps users manage daily tasks by adding, completing, editing, and deleting tasks easily.
+
 ---
 
 🚀 Features
@@ -20,10 +21,12 @@ This is a simple To-Do List web application built using **HTML, CSS, and JavaScr
 
 🔗 Live Demo
    https://beautiful-smakager-487267.netlify.app/
+   
 ---
 
 📂 GitHub Repository
     https://github.com/chetanabobade49-ship-it/OIBSIP/tree/main/Chetana_Task3
+    
 ---
 
 👩‍💻 Developed By
