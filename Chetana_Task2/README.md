@@ -17,10 +17,12 @@ This is a simple tribute webpage dedicated to **Dr. A. P. J. Abdul Kalam**, the 
 ---
 🌐 Live Demo
 
-  https://calm-ganache-87a982.netlify.app/
+   https://calm-ganache-87a982.netlify.app/
   
 ---
 📂 GitHub Repository
+
+   https://github.com/chetanabobade49-ship-it/OIBSIP/tree/main/Chetana_Task2
 
 -----
 👩‍💻 Developed By
