@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare — Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dash">
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">🏥</div>
+      Medi<span>Care</span>
+    </div>
+    <div class="nav-links">
+      <button>Home</button>
+      <button>Records</button>
+      <button>Appointments</button>
+      <button class="logout" onclick="logoutPatient()">Logout</button>
+      <div class="avatar" id="d-avatar">--</div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="main">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div>
+        <h2 id="d-welcome">Welcome back!</h2>
+        <p id="d-email">Loading…</p>
+        <div class="hero-pills">
+          <span class="pill pill-blue">🏥 MediCare Hospital</span>
+          <span class="pill pill-green">✅ Active Patient</span>
+        </div>
+      </div>
+      <div class="pulse-icon">🩺</div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num" style="color:#1565c0">3</div>
+        <div class="stat-lbl">Appointments</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="color:#2e7d32">4</div>
+        <div class="stat-lbl">Medications</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="color:#c62828">2</div>
+        <div class="stat-lbl">Lab Reports</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="color:#6a1b9a">98%</div>
+        <div class="stat-lbl">Health Score</div>
+      </div>
+    </div>
+
+    <!-- Patient Info + Appointments -->
+    <div class="row2">
+
+      <!-- Patient Info -->
+      <div class="panel">
+        <div class="panel-title"><div class="dot"></div>Patient information</div>
+
+        <div class="info-row">
+          <span class="info-icon">🪪</span>
+          <div><div class="info-label">Patient ID</div><div class="info-val" id="d-pid">—</div></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">👤</span>
+          <div><div class="info-label">Full name</div><div class="info-val" id="d-name">—</div></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🎂</span>
+          <div><div class="info-label">Age</div><div class="info-val" id="d-age">—</div></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🩸</span>
+          <div><div class="info-label">Blood group</div><div class="info-val" id="d-blood">—</div></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🛏️</span>
+          <div><div class="info-label">Ward</div><div class="info-val" id="d-ward">—</div></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🩺</span>
+          <div><div class="info-label">Doctor</div><div class="info-val">Dr. Mehta (Cardiology)</div></div>
+        </div>
+      </div>
+
+      <!-- Upcoming Appointments -->
+      <div class="panel">
+        <div class="panel-title"><div class="dot"></div>Upcoming appointments</div>
+
+        <div class="appt">
+          <div class="appt-date"><div class="dd">14</div><div class="mo">JUL</div></div>
+          <div class="appt-info">
+            <div class="appt-dr">Dr. Mehta</div>
+            <div class="appt-spec">Cardiology · 10:00 AM</div>
+          </div>
+          <span class="appt-badge badge-conf">Confirmed</span>
+        </div>
+        <div class="appt">
+          <div class="appt-date"><div class="dd">21</div><div class="mo">JUL</div></div>
+          <div class="appt-info">
+            <div class="appt-dr">Dr. Kapoor</div>
+            <div class="appt-spec">Radiology · 2:30 PM</div>
+          </div>
+          <span class="appt-badge badge-pend">Pending</span>
+        </div>
+        <div class="appt">
+          <div class="appt-date"><div class="dd">28</div><div class="mo">JUL</div></div>
+          <div class="appt-info">
+            <div class="appt-dr">Dr. Rathi</div>
+            <div class="appt-spec">General · 9:00 AM</div>
+          </div>
+          <span class="appt-badge badge-conf">Confirmed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vitals + Medications -->
+    <div class="row2">
+
+      <!-- Vitals -->
+      <div class="panel">
+        <div class="panel-title"><div class="dot"></div>Current vitals</div>
+        <div class="vitals">
+          <div class="vital-box">
+            <div class="vital-val" style="color:#c62828">120<span class="vital-unit">/80</span></div>
+            <div class="vital-name">Blood pressure</div>
+          </div>
+          <div class="vital-box">
+            <div class="vital-val" style="color:#1565c0">72 <span class="vital-unit">bpm</span></div>
+            <div class="vital-name">Heart rate</div>
+          </div>
+          <div class="vital-box">
+            <div class="vital-val" style="color:#2e7d32">98 <span class="vital-unit">%</span></div>
+            <div class="vital-name">Oxygen level</div>
+          </div>
+          <div class="vital-box">
+            <div class="vital-val" style="color:#f57c00">98.6 <span class="vital-unit">°F</span></div>
+            <div class="vital-name">Temperature</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medications -->
+      <div class="panel">
+        <div class="panel-title"><div class="dot"></div>Current medications</div>
+
+        <div class="med">
+          <div class="med-dot" style="background:#1565c0"></div>
+          <div><div class="med-name">Metoprolol</div><div class="med-dose">25 mg · once daily</div></div>
+          <span class="med-time">Morning</span>
+        </div>
+        <div class="med">
+          <div class="med-dot" style="background:#2e7d32"></div>
+          <div><div class="med-name">Aspirin</div><div class="med-dose">75 mg · once daily</div></div>
+          <span class="med-time">Morning</span>
+        </div>
+        <div class="med">
+          <div class="med-dot" style="background:#c62828"></div>
+          <div><div class="med-name">Atorvastatin</div><div class="med-dose">10 mg · at night</div></div>
+          <span class="med-time">Night</span>
+        </div>
+        <div class="med">
+          <div class="med-dot" style="background:#6a1b9a"></div>
+          <div><div class="med-name">Amlodipine</div><div class="med-dose">5 mg · once daily</div></div>
+          <span class="med-time">Evening</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="panel">
+      <div class="panel-title"><div class="dot"></div>Quick actions</div>
+      <div class="actions">
+        <div class="act-btn"><div class="act-icon">📅</div>Book appointment</div>
+        <div class="act-btn"><div class="act-icon">🧪</div>Lab reports</div>
+        <div class="act-btn"><div class="act-icon">💊</div>Prescriptions</div>
+        <div class="act-btn"><div class="act-icon">📋</div>Medical history</div>
+        <div class="act-btn"><div class="act-icon">💬</div>Message doctor</div>
+        <div class="act-btn"><div class="act-icon">🚑</div>Emergency</div>
+      </div>
+    </div>
+
+    <!-- Logout -->
+    <div class="logout-wrap">
+      <button class="btn btn-red" onclick="logoutPatient()">Logout</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>loadDashboard();</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare — Patient Registration</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="auth">
+
+  <div class="card">
+    <div class="card-top">
+      <div class="icon">🏥</div>
+      <h1>MediCare Portal</h1>
+      <p>Create your patient account</p>
+    </div>
+
+    <div id="reg-msg" class="msg"></div>
+
+    <form onsubmit="registerPatient(event)">
+      <div class="field">
+        <label>Full Name</label>
+        <input type="text" id="r-name" placeholder="e.g. Priya Sharma"/>
+      </div>
+      <div class="field">
+        <label>Age</label>
+        <input type="number" id="r-age" placeholder="e.g. 28" min="1" max="120"/>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="r-email" placeholder="priya@email.com"/>
+      </div>
+      <div class="field">
+        <label>Username</label>
+        <input type="text" id="r-user" placeholder="Choose a username"/>
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="r-pass" placeholder="Create a password"/>
+      </div>
+      <div class="field">
+        <label>Confirm Password</label>
+        <input type="password" id="r-confirm" placeholder="Repeat password"/>
+      </div>
+      <button type="submit" class="btn">Register Patient</button>
+    </form>
+
+    <div class="switch">Already registered? <a href="login.html">Login here</a></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

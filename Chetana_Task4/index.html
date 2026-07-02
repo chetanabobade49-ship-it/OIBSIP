@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare — Patient Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="auth">
+
+  <div class="card">
+    <div class="card-top">
+      <div class="icon">🔐</div>
+      <h1>Patient Login</h1>
+      <p>Sign in to access your health portal</p>
+    </div>
+
+    <div id="login-msg" class="msg"></div>
+
+    <form onsubmit="loginPatient(event)">
+      <div class="field">
+        <label>Username</label>
+        <input type="text" id="l-user" placeholder="Enter your username"/>
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="l-pass" placeholder="Enter your password"/>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="switch">New patient? <a href="register.html">Register here</a></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
