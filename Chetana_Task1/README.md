@@ -11,7 +11,7 @@ Calculator is a simple and responsive web application developed as Task 1 during
 - AC (Clear) Button
 - Delete (Backspace) Button
 - Responsive Design
-  
+
 ---
 
 🛠️ Tech Stack
