@@ -2,7 +2,7 @@
 
 Calculator is a simple and responsive web application developed as Task 1 during my Oasis Infobyte Web Development & Designing Internship
 
- 🚀 Features
+🚀 Features
 
 - Basic Arithmetic Operations
 - Addition, Subtraction
@@ -35,4 +35,4 @@ Calculator is a simple and responsive web application developed as Task 1 during
 ---
 👩‍💻 Developed By
 
-Chetana Bobade
+  Chetana Bobade
