@@ -1,0 +1,156 @@
+/* ── Body ── */
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background-color: #eef5ff;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #222;
+}
+
+/* ── Main Card ── */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #fffdf8;
+  border: 2px solid #d8e5f5;
+  border-radius: 12px;
+  padding: 40px 45px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Top Section ── */
+.top-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* ── Image ── */
+.photo-box img {
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50% / 45%;
+  border: 4px solid #1e3a5f;
+  display: block;
+}
+
+/* ── Name ── */
+.name-box h1 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+  color: #1e3a5f;
+}
+
+.years {
+  font-size: 1rem;
+  color: #666;
+  text-align: right;
+}
+
+/* ── Main Heading ── */
+.main-title {
+  font-size: 1.9rem;
+  color: #1e3a5f;
+  margin-bottom: 15px;
+}
+
+/* ── Paragraph ── */
+.about {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/* ── Admire Section ── */
+.admire-box {
+  background: #f4f8ff;
+  border-left: 5px solid #1e3a5f;
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.admire-box h3 {
+  margin-top: 0;
+  color: #1e3a5f;
+}
+
+.admire-box p {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* ── Quote ── */
+.quote {
+  text-align: center;
+  background: #f8fbff;
+  padding: 18px;
+  border-radius: 8px;
+  margin: 25px 0;
+}
+
+.quote p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #1e3a5f;
+}
+
+.quote span {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* ── Achievements ── */
+.biographies {
+  margin-bottom: 25px;
+}
+
+.biographies h3 {
+  color: #1e3a5f;
+}
+
+.biographies ul {
+  padding-left: 22px;
+}
+
+.biographies li {
+  line-height: 1.8;
+}
+
+/* ── Footer Link ── */
+.wiki-link {
+  text-align: right;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+}
+
+.wiki-link a {
+  color: #1e3a5f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.wiki-link a:hover {
+  text-decoration: underline;
+}
+
+/* ── Responsive ── */
+@media (max-width: 560px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .years {
+    text-align: center;
+  }
+
+  .page {
+    padding: 25px 20px;
+  }
+}
