@@ -1,6 +1,8 @@
 🧮 Calculator
 
-Calculator is a simple and responsive web application developed as Task 1 during my Oasis Infobyte Web Development & Designing Internship
+  Calculator is a simple and responsive web application developed as Task 1 during my Oasis Infobyte Web Development & Designing Internship
+  
+---
 
 🚀 Features
 
