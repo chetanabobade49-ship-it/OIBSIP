@@ -20,13 +20,13 @@ Calculator is a simple and responsive web application developed as Task 1 during
 - CSS
 - JavaScript
 
-  ---
+---
 
 🌐 Live Demo
  
    https://nimble-baklava-7a8ee7.netlify.app
 
-   ---
+---
 
 📂 GitHub Repository
 
